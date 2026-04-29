@@ -1,0 +1,15 @@
+To Access list of users :
+cd backend
+npx prisma studio
+
+Run docker:
+Open docker 
+docker-compose up --build
+
+To Run Backend Project:
+nmp install
+npx prisma migrate dev --name init
+npm start
+
+To Run frontend Project:
+npm run dev 
