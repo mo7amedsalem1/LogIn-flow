@@ -39,28 +39,6 @@ Production-oriented full-stack authentication system with:
 `-- docker-compose.yml
 ```
 
-## Backend environment
-
-Copy [backend/.env.example](/C:/Users/Lenovo/Desktop/LogIn%20flow/backend/.env.example) to `backend/.env` and review the values:
-
-```env
-NODE_ENV=development
-PORT=5000
-DATABASE_URL="postgresql://postgres:postgres@localhost:5432/secure_auth?schema=public"
-JWT_SECRET="replace-this-with-a-long-random-string-at-least-32-characters"
-JWT_PREAUTH_SECRET="replace-this-with-a-different-long-random-string"
-JWT_EXPIRES_IN="1h"
-JWT_PREAUTH_EXPIRES_IN="5m"
-JWT_ISSUER="secure-auth-platform"
-JWT_AUDIENCE="secure-auth-frontend"
-BCRYPT_ROUNDS=12
-TWO_FA_APP_NAME="Secure Auth Platform"
-CORS_ORIGIN="http://localhost:5173"
-ENCRYPTION_KEY="0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
-MANAGER_ROLE_SETUP_CODE="manager-invite-change-me"
-ADMIN_ROLE_SETUP_CODE="admin-invite-change-me"
-```
-
 ## Frontend environment
 
 Copy [frontend/.env.example](/C:/Users/Lenovo/Desktop/LogIn%20flow/frontend/.env.example) to `frontend/.env`:
